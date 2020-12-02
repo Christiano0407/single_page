@@ -43,7 +43,7 @@ section {
    border-radius: .5rem;
    overflow: hidden;
    display: flex;
-   color: #1d1d1d;
+   flex-direction: column;
 }
 .card-tittle-large {
     font-family: protipo,sans-serif;
@@ -53,6 +53,7 @@ section {
     letter-spacing: .5rem;
     transform: translate(7rem);
     color: #1d1d1d;
+    transition: transform 5s;
 }
 .card-tittle-small {
     font-size: 1.6rem;
@@ -67,4 +68,14 @@ section {
     color: var(--color-base2);
     margin-top: 1rem;
     align-self: flex-end;
+}
+.card:hover .card-tittle-large {
+    transform: translateX(-150%);
+    color: var(--color-base2);
+}
+.card.twitter:hover{
+    background-color: #1da1f2;
+}
+.card.instagram:hover {
+    background-image: radial-gradient(at 20% 120%, #feda78 20%, #e23467 60%, #ac2bb3 90% );
 }
