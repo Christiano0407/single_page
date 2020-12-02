@@ -9,7 +9,7 @@ html {
 :root {
     --color-base1: #000000;
     --color-base2: #ffffff;
-    
+
 }
 
 body {
@@ -19,4 +19,25 @@ body {
 }
 a {
     text-decoration: none;
+}
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-base1);
+}
+.container {
+    max-width: 98rem;
+    padding: 1.5rem;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 1.5rem;
+}
+.card {
+   background-color: #262525;
+   color: var(--color-base2);
+   padding: 1.5rem;
 }
