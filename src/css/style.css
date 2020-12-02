@@ -25,3 +25,44 @@ body {
     height: 100vh;
     width: 100%;
 }
+.wrapper {
+ max-width: 1024px;
+ margin: 0 auto;
+}
+.hidden {
+    display: none;
+}
+.video {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+.video-js {
+    width: 100%;
+    height: auto;
+    user-select: none;
+}
+.video::after {
+    content: "►";
+    width: 100px;
+    height: 100px;
+    color: white;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+    font-size: 1.3rem;
+}
+.video:hover .video::after {
+    transform: scale(1.1);
+}
+img {
+    max-width: 100%;
+}
