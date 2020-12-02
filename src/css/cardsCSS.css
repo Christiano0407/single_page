@@ -34,7 +34,7 @@ section {
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-gap: 1.5rem;
+    grid-gap: 1rem;
 }
 .card {
    background-color: #262525;
@@ -78,4 +78,13 @@ section {
 }
 .card.instagram:hover {
     background-image: radial-gradient(at 20% 120%, #feda78 20%, #e23467 60%, #ac2bb3 90% );
+}
+.card.facebook:hover {
+    background-color: #4267b2;
+}
+.card.youtube:hover {
+    background-color: #ff071c;
+}
+.card.linkedin:hover {
+    background-color: #1e2f53;
 }
