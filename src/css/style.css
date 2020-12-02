@@ -23,26 +23,28 @@ a {
 }
 body {
     height: 100vh;
-    width: 100%;
+    width: 100%; 
 }
 .wrapper {
- max-width: 1024px;
- margin: 0 auto;
-}
-.hidden {
+    max-width: 1042px;
+    margin: 0 auto;
+  }
+  
+  .hidden {
     display: none;
-}
-.video {
+  }
+  
+  .video {
     position: relative;
     cursor: pointer;
     user-select: none;
-}
-.video-js {
+  }
+  .video-js {
     width: 100%;
     height: auto;
-    user-select: none;
-}
-.video::after {
+    aspect-ratio: 16/9;
+  }
+  .video::after {
     content: "►";
     width: 100px;
     height: 100px;
@@ -58,11 +60,15 @@ body {
     top: 0;
     bottom: 0;
     border-radius: 50%;
-    font-size: 1.3rem;
-}
-.video:hover .video::after {
+    font-size: 1.3em;
+  }
+  
+  .video:hover .video::after {
     transform: scale(1.1);
-}
-img {
+  }
+  
+  
+  img {
     max-width: 100%;
-}
+  }
+
