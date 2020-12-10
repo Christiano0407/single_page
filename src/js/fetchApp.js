@@ -49,8 +49,12 @@ const shopping = new Promise((resolve, reject) => {
         }, 2000)
     }, 2000)
 })
-shopping.then((data) => {
+shopping
+.then((data) => {
     renderMessage(data.toString())
+})
+.catch((message) => {
+    renderMessage(message)
 })
 
 
