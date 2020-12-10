@@ -20,6 +20,42 @@ fetch(`https://pokeapi.co/api/v2/pokemon/25/`)
      })
      .catch(() => {renderMessage(`Pokemon no encontrado :( `)})
 //
+
+/* PROMESAS */
+const compras = [];
+const shopping = new Promise((resolve, reject) => {
+    console.log(`Ejerce tú compra en el mercado; vayamos por secciones`);
+
+    setTimeout(() => {
+    compras.push(`Frutas`)
+    console.log(`Ya tengo la fruta.`)
+    setTimeout(() => {
+        compras.push(`Verduras`)
+        console.log(`Ya tengo la verdura.`)
+        setTimeout(() => {
+            compras.push(`Carne`)
+            console.log(`Ya tengo la Carne.`)
+            setTimeout(() => {
+                compras.push(`Pollo`)
+                console.log(`Ya escogí el pollo.`)
+                setTimeout(() => {
+                    compras.push(`pagado`)
+                    console.log(compras)
+                    resolve(compras)
+                    console.log(`Ya tengo todo`)
+                    },2000)
+                },2000) 
+            }, 2000)
+        }, 2000)
+    }, 2000)
+})
+shopping.then((data) => {
+    renderMessage(data.toString())
+})
+
+
+
+
 /* fetch(`pokemon.json`,{
 
 })
@@ -35,6 +71,7 @@ fetch(`https://pokeapi.co/api/v2/pokemon/25/`)
     const domString = URL.createObjectURL(binaryLargeObject)
     debbuger
     renderPokemon(data.image)}) */
+
 
 
 
