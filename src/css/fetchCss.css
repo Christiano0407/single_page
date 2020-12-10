@@ -17,13 +17,25 @@ body {
     font-weight: 400;
     font-style: normal;
     background-color:#fceef5;
+    
 }
 a {
     text-decoration: none;
 }
 #pokemon{
     cursor: pointer;
+    
+    /* display: flex; */
 }
+/* #pokemon img {
+    width: 5rem;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center; 
+} */
 #message{
     color: var(--color-base);
     font-size: 2rem;

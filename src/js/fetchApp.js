@@ -22,7 +22,7 @@ fetch(`https://pokeapi.co/api/v2/pokemon/25/`)
 //
 
 /* PROMESAS */
-const compras = [];
+/* const compras = [];
 const shopping = new Promise((resolve, reject) => {
     console.log(`Ejerce tú compra en el mercado; vayamos por secciones`);
 
@@ -35,6 +35,7 @@ const shopping = new Promise((resolve, reject) => {
         setTimeout(() => {
             compras.push(`Carne`)
             console.log(`Ya tengo la Carne.`)
+            reject(`No! Yo no quiero carne.`)
             setTimeout(() => {
                 compras.push(`Pollo`)
                 console.log(`Ya escogí el pollo.`)
@@ -55,8 +56,49 @@ shopping
 })
 .catch((message) => {
     renderMessage(message)
+}) */
+
+//otra Promesa:
+function buy (thingToBuy, time= 2000) {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+          renderMessage(`${thingToBuy}`)
+          resolve(`${thingToBuy}`)
+      }, time)
+    })
+}
+//otra:
+const cart = []
+console.time()
+Promise.all([
+    buy(`Frutas`,3000),
+    buy(`Verduras`,1000),
+    buy(`Pollo`,4000),
+    buy(`Granola`,2000),
+    buy(`Carne`,5000),
+])
+.then((cart) => {
+    console.timeEnd()
+    renderMessage(cart.toString())
 })
 
+//otra:
+/* function shopping(){
+    const cart = []
+    return buy(`Fruta`)
+    .then((thing) => {cart.push(thing); return buy(`Verduras`)})
+    .then((thing) => {cart.push(thing); return buy(`Pollo`)})
+    .then((thing) => {cart.push(thing); return buy(`Granola`)})
+    .then((thing) => {cart.push(thing); return cart })
+}
+shopping()
+.then((cart) => {
+   renderMessage(cart.toString())
+}) */
+/* buy(`frutas`)
+.then((thing) => {
+    renderMessage(thing)
+}) */
 
 
 
