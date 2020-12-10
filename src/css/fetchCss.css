@@ -22,3 +22,7 @@ a {
 #pokemon{
     cursor: pointer;
 }
+#message{
+    color: var(--color-base);
+    font-size: 2rem;
+}
