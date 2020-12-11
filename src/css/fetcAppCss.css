@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+:root {
+    --primary-color: #ffffff;
+    --secondary-color:#000000;
+}
+body {
+    width: 100%;
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+}

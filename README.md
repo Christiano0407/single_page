@@ -1,2 +1,2 @@
 # single_page
-Javascript proyect with Single Page Application
+Differents proyects with Javascript (Landing Page, API_Rest, Webpasck, json).
