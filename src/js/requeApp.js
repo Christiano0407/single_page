@@ -23,3 +23,6 @@ function ajax({url, method = `GET`, async = true, done = (), error = () => {}, r
 }
 
 const request = new XMLHttpRequest()
+request.responseType = responseType
+console.log(status(request.readyState), request.readyState)
+
