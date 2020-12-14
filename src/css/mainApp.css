@@ -64,23 +64,23 @@ main {
     border-radius: 50%;
     font-size: 1.3em;
   }
-  /* .video:hover .video::after {
+  .video:hover .video::after {
     transform: scale(1.1);
-  } */
+  } 
 
-/*   img {
+ img {
     max-width: 100%;
-  } */
+  } 
 
  .hidden {
     display: none;
   } 
 
-  /* .video-js {
+   .video-js {
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
-  } */
+  } 
 
  /*  pause */
 /* .video img {
