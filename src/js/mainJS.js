@@ -14,4 +14,7 @@
 // 
 video.addEventListener(`click`, function(){
     console.log(`Click`);
+    this.classList.add(`hidden`)
+    //import
+    import(`./play.js`).then()
 })
