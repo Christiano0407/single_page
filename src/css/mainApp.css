@@ -25,20 +25,75 @@ body {
 }
 header{
     width: 100%;
-    height: 10vh;
+    height: 5vh;
     background-color: var(--color-base1);
 }
 main {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     background-color: var(--color-base);
 }
 .wrapper{
     max-width: 1024px;
     margin: 0 auto;
+    height: 80vh;
 }
-footer {
+.video {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+   /*  display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.video::after {
+    content: "►";
+    width: 100px;
+    height: 100px;
+    color: white;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 50%;
+    border-radius: 50%;
+    font-size: 1.3em;
+  }
+  /* .video:hover .video::after {
+    transform: scale(1.1);
+  } */
+
+/*   img {
+    max-width: 100%;
+  } */
+
+/*   .hidden {
+    display: none;
+  } */
+
+  /* .video-js {
     width: 100%;
-    height: 10vh;
+    height: auto;
+    aspect-ratio: 16/9;
+  } */
+
+ /*  pause */
+/* .video img {
+    width: 40rem;
+    height:30rem;
+    background-size: cover;
+    object-fit: cover;
+} */
+/* #music {
+    
+} */
+/* footer {
+    width: 100%;
+    height: 5vh;
     background-color: var(--color-base1);
-}
+} */

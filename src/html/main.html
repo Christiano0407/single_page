@@ -10,6 +10,12 @@
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/eoy0gzf.css">
     <link rel="stylesheet" href="../css/mainApp.css">
+   <!--  <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" /> -->
+  <!--  <link
+   href="https://unpkg.com/@videojs/themes@1/dist/city/index.css"
+   rel="stylesheet"
+   /> -->
+
     <title>Video-Imports</title>
 </head>
 <body>
@@ -25,8 +31,19 @@
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, impedit voluptas explicabo similique odio consequuntur perspiciatis facilis quidem ab totam libero vitae dolores veniam? Architecto vitae voluptate perspiciatis nostrum deserunt!
             </p>
             <h2>Mira la transmisión en vivo.</h2>
-            <div>
-                
+            
+            <div class="video" id="video">
+             <picture>
+                 <img src="../assets/img/aud2.jpg" alt="Image video_music">
+             </picture>
+
+             <video id="music" width="720" height="480" autoplay controls>
+                <source src="../assets/img/Pexels Videos 2825517.mp4" type="video/mp4">
+             </video>
+
+             <!-- <video class="video-js vjs-theme-city hidden" id="ps5" width="720" height="480" autoplay controls>
+                <source src="../assets/img/Pexels Videos 2825517.mp4" type="video/mp4" />
+              </video> -->
             </div>
         </div>
     </main>
